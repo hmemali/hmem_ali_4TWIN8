@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        jdk 'JAVA_HOME'
-        maven 'M2_HOME'
+        jdk 'JDK17'
+        maven 'maven3'
     }
 
     stages {
@@ -11,7 +11,7 @@ pipeline {
         stage('GIT') {
             steps {
                 git branch: 'master',
-                    url: 'https://github.com/hwafa/timesheetproject.git'
+                    url: 'https://github.com/hmemali/hmem_ali_4TWIN8.git'
             }
         }
 
